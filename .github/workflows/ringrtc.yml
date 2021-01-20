@@ -7,7 +7,7 @@ jobs:
     name: Code Formatting
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Install nightly toolchain
       run: rustup toolchain install nightly-2020-03-15
     - name: Install nightly rustfmt
@@ -23,7 +23,7 @@ jobs:
     name: Lints
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: Install nightly toolchain
       run: rustup toolchain install 1.47.0
     - name: Install cargo clippy
